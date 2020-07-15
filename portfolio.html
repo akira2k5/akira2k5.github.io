@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Akira's Portfolio</title>
+
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+  <link rel="stylesheet" type="text/css" href="css/about.css">
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+  <link rel="stylesheet" type="text/css" href="css/top_menu.css">
+  <link rel="stylesheet" type="text/css" href="css/common_style.css">
+  <script src="js/jquery-3.5.1.js"></script>
+
+</head>
+
+<body>
+<!-- Top menu -->		
+  <nav class="menu">
+    <a id="menubtn" class="toggle-nav" href="#">&#9776;</a> <!--&#9776; 漢堡選單按鈕 (三條槓)符號代碼-->
+    <div class="menu-logo"><a>Akira's Portfolio</a></div>
+      <ul id="menuUl" class="menubtn-active">
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li class="current-active"><a href="portfolio.html">portfolio</a></li>      
+      </ul>
+    </nav>
+<!-- Top menu END-->
+
+<!-- content -->
+<!-- Portfolio Section -->
+<section class="portfolio section" id="portfolio">
+	<div class="container">
+		<div class="row">
+			<div class="section-title padd-15">
+				<h2>Portfolio</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="portfolio-filter padd-15">
+				<button type="button" class="button-active" data-filter="all">All</button>
+				<button type="button" data-filter="app-design">App Design</button>
+				<button type="button" data-filter="web-design">Web Design</button>
+				<button type="button" data-filter="graphic-design">Graphic Design</button>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<!-- portfolio item -->
+			<div class="portfolio-item padd-15 hide show" data-category="app-design">
+				<div class="portfolio-item-inner shadow-dark">
+					<div class="portfolio-img">
+						<img src="images/portfolio/1.jpg" alt="portfolio">
+					</div>
+					<div class="portfolio-info">
+						<h4>4 Seasons Hearing</h4>
+						<div class="icon">
+							<i class="fa fa-search"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- portfolio item end -->
+			<!-- portfolio item -->
+			<div class="portfolio-item padd-15 hide show" data-category="app-design">
+				<div class="portfolio-item-inner shadow-dark">
+					<div class="portfolio-img">
+						<img src="images/portfolio/2.jpg" alt="portfolio">
+					</div>
+					<div class="portfolio-info">
+						<h4>PSAP Self Adjust</h4>
+						<div class="icon">
+							<i class="fa fa-search"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- portfolio item end -->
+			<!-- portfolio item -->
+			<div class="portfolio-item padd-15 hide show" data-category="app-design">
+				<div class="portfolio-item-inner shadow-dark">
+					<div class="portfolio-img">
+						<img src="images/portfolio/3.jpg" alt="portfolio">
+					</div>
+					<div class="portfolio-info">
+						<h4>EarEQ</h4>
+						<div class="icon">
+							<i class="fa fa-search"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- portfolio item end -->
+			<!-- portfolio item -->
+			<div class="portfolio-item padd-15 hide show" data-category="web-design">
+				<div class="portfolio-item-inner shadow-dark">
+					<div class="portfolio-img">
+						<img src="images/portfolio/4.jpg" alt="portfolio">
+					</div>
+					<div class="portfolio-info">
+						<h4>UnlimiterHear Website</h4>
+						<div class="icon">
+							<i class="fa fa-search"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- portfolio item end -->
+			<!-- portfolio item -->
+			<div class="portfolio-item padd-15 hide show" data-category="web-design">
+				<div class="portfolio-item-inner shadow-dark">
+					<div class="portfolio-img">
+						<img src="images/portfolio/4.jpg" alt="portfolio">
+					</div>
+					<div class="portfolio-info">
+						<h4>Unlimiter Website</h4>
+						<div class="icon">
+							<i class="fa fa-search"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- portfolio item end -->
+			<!-- portfolio item -->
+			<div class="portfolio-item padd-15 hide show" data-category="graphic-design">
+				<div class="portfolio-item-inner shadow-dark">
+					<div class="portfolio-img">
+						<img src="images/portfolio/5.jpg" alt="portfolio">
+					</div>
+					<div class="portfolio-info">
+						<h4>Hearing Communication Boards</h4>
+						<div class="icon">
+							<i class="fa fa-search"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- portfolio item end -->
+			<!-- portfolio item -->
+			<div class="portfolio-item padd-15 hide show" data-category="graphic-design">
+				<div class="portfolio-item-inner shadow-dark">
+					<div class="portfolio-img">
+						<img src="images/portfolio/6.jpg" alt="portfolio">
+					</div>
+					<div class="portfolio-info">
+						<h4>Unlimiter Catalog</h4>
+						<div class="icon">
+							<i class="fa fa-search"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- portfolio item end -->
+
+		</div>
+	</div>
+</section>
+<!-- Portfolio Section End -->
+
+	<!-- Lightbox -->
+	<div class="lightbox ">
+		<div class="lightbox-content">
+			<div class="lightbox-close">&times;</i></div>
+			<img class="lightbox-img" onclick="nextItem()">
+			<div class="lightbox-caption">
+				<div class="lightbox-text"></div>
+				<div class="lightbox-counter"></div>
+			</div>
+		</div>
+		<div class="lightbox-controls">
+			<div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
+			<div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
+		</div>
+	</div>
+	<!-- Lightbox end -->
+	
+
+    
+<!-- content END-->
+
+<footer>© 2020 Akira</footer>
+
+<!-- Top menu js -->
+<script>
+	document.getElementById('menubtn').addEventListener('click', function (e) {
+	  $(this).toggleClass('active');
+	  $('#menuUl').toggleClass('active');
+	});
+</script>
+<!-- Top menu js END-->
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
