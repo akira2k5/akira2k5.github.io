@@ -46,7 +46,7 @@ body.dark .shadow-dark {
 .section {
   /*background-color: #303030;*/
   /*vh = viewheight*/
-  /**/min-height: 92vh;
+  /**/min-height: 96vh;
   /*display block a box*/
   display: block;
   padding: 0 30px;
