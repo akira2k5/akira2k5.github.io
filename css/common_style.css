@@ -23,10 +23,16 @@ body{
     margin: auto;
 }
 
-footer {
+/*.homefooter {
     text-align: center;
     color: rgb(255, 255, 255);
+    bottom: 5px;
     padding-bottom: 5px;
+}*/
+
+footer, .homefooter  {
+  text-align: center;
+  color: rgb(255, 255, 255);
 }
 
 /*
@@ -39,7 +45,7 @@ body.dark .shadow-dark {
 .section {
   /*background-color: #303030;*/
   /*vh = viewheight*/
-  min-height: 100vh;
+  /**/min-height: 96vh;
   /*display block a box*/
   display: block;
   padding: 0 30px;
