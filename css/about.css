@@ -132,9 +132,12 @@
 
 .about .about-content .skills .skill-item {
   /* background-color: blue; */
-  -ms-flex: 0 0 100%;
+  /*-ms-flex: 0 0 100%;
   flex: 0 0 100%;
-  max-width: 100%;
+  max-width: 100%;*/
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
   margin-bottom: 30px;
 }
 
