@@ -170,6 +170,9 @@ body.dark .shadow-dark {
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .about .about-content .about-li{ /*個人特色列表*/
+    padding-left: 5px;
+  }
 }
 @media(max-width:420px) {
   .about .about-content .personal-info .info-item {
