@@ -171,3 +171,10 @@ body.dark .shadow-dark {
     max-width: 100%;
   }
 }
+@media(max-width:420px) {
+  .about .about-content .personal-info .info-item {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
