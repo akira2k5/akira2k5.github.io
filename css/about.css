@@ -1,38 +1,7 @@
 /* Font Awesome Free Icon */
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
-/*::before::after {
-  keep box same size
-  box-sizing: border-box;
-}*/
 
-@-webkit-keyframes slideSection {
-  0% {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-  }
-
-  100% {
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%);
-  }
-}
-
-@keyframes slideSection {
-  0% {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-  }
-
-  100% {
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%);
-  }
-}
-
-/* .main-content {
-  padding-left: -270px;
-} */
 
 .container {
   max-width: 1100px;
@@ -40,10 +9,6 @@
   margin: auto;
 }
 
-.shadow-dark {
-  -webkit-box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
-  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
-}
 
 /*About Section */
 .about .about-content {
@@ -80,7 +45,7 @@
   margin-bottom: 0;
 }
 
-.about .about-content .personal-info {
+.about .about-content .personal-info { /*個人資訊 總寬*/
   /* background-color: red; */
   -ms-flex: 0 0 60%;
   flex: 0 0 60%;
@@ -88,7 +53,7 @@
   margin-top: 40px;
 }
 
-.about .about-content .personal-info .info-item {
+.about .about-content .personal-info .info-item { /*個人資訊 兩欄*/
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 50%;
@@ -112,15 +77,7 @@
   display: inline-block;
 }
 
-.about .about-content .personal-info .buttons {
-  /* background-color: red; */
-  margin-top: 30px;
-}
 
-.about .about-content .personal-info .buttons .btn {
-  margin-right: 15px;
-  margin-top: 10px;
-}
 
 .about .about-content .skills {
   /* background-color: blue; */
