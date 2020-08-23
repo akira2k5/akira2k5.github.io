@@ -1,0 +1,94 @@
+/*the menu nav bar start ------->*/
+html,body{
+    height: 100%;
+}
+.menu {
+    width: 240px;/*width: 100%;*/
+    height: 100%;/*height: 60px;*/
+    float: left;
+    background: #217177;
+    box-shadow: 5px 0px 0px 0px rgba(0, 0, 0, 0.15);
+    /*z-index: 10; 階層*/
+    position:fixed;/*固定位置*/
+    /*opacity : .5; 透明度測試用 */
+}
+
+.menu .menu-logo {
+    padding: 80px 0 10px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.menu li {
+    list-style: none;
+    font-size: 26px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgb(146, 151, 150);
+    display: block;
+    transition: color linear 0.15s;
+    cursor: pointer;
+}
+
+
+
+.menu a:hover, .menu .current-active a {
+    text-decoration: none;
+    color: #6fe1f0;
+    /*color: #337275;*/
+}
+
+.toggle-nav { /* 漢堡選單按鈕 (三條槓) */
+    display: none; /*隱藏消失*/
+}
+
+/*螢幕小於767px時*/
+@media screen and (max-width: 767px) {
+    .menu {
+        /*position: relative; 絕對位置*/
+        width: 100%;
+        height: 60px;
+        z-index: 10;
+        position:fixed;
+        display: inline-block; /*不需要特別寫 clear:left; 去清除.menu li 的 float: left; */
+    }
+    .toggle-nav { /* 漢堡選單按鈕 (三條槓) */
+        position: absolute; /* 根據所處上層容器的相對位置*/
+        left: 4%;
+        /*right: 4%;*/
+        color: #ffffff;
+        text-decoration: none;
+        line-height: 60px;
+    }
+    .menu .menu-logo {
+        /*position: relative;
+        left: 38%; LOGO位置*/
+        padding: 5px 50px 15px 50px;
+        text-align: center;
+    }
+    .menu ul.active {
+        display: none;
+    }
+    .menu ul {
+        left: 0px;
+        /*right: 0px;*/
+        padding: 10px 25px;
+        margin-top: -5px;
+        /**/box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+        /*border-radius: 0px 0px 3px 3px; */
+        /**/background: #272626;
+    }
+    .menu li {
+
+        margin: 10px 0px 10px 0px;
+        float: none;
+        display: block;
+    }
+    .menu a {
+        display: block;
+    }
+}
+/*the menu nav bar END ------->*/
