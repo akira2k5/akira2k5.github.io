@@ -1,0 +1,88 @@
+/* Home Section */
+.home{
+  height: 94vh;
+  margin:0 0 0 240px;
+  display:flex; /*div垂直定位*/
+  justify-content:center;/*div垂直定位*/
+  /*background-color: rgb(79, 124, 182);*/  
+}
+
+.home .container{
+  height: 47vh;/*div垂直定位 .home的height: 94vh;一半*/
+  /*padding-top: 180px;*/
+}
+
+.home .intro {
+  text-align: center;
+}
+
+.home .intro img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+ /* display: inline-block;*/
+  border: 8px solid #66AB8C;
+}
+
+.home .intro h1 {
+  font-size: 30px;
+  color: #868686;
+  /*font-family: 'Rubik', sans-serif;
+  font-weight: 100;*/
+  margin: 20px 0 5px;
+}
+
+.home .intro p {
+  font-size: 16px;
+  color: #898989;
+  font-weight: 500;
+  line-height: 22px;
+  margin: 0px;
+}
+
+.home .intro .social-links {
+  margin-top: 25px;
+}
+
+.home .intro .social-links a {
+  height: 35px;
+  width: 35px;
+  /*display: inline-block;
+  text-align: center;*/
+  line-height: 35px;
+  color: #ffffff;
+  /*margin code = up right down left */
+  margin: 0 4px;
+ /* border-radius: 50%;*/
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.home .intro .social-links a:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+
+/*螢幕小於767px時*/
+@media screen and (max-width: 767px) {
+  .home{
+    margin-left: 0;
+    padding-top: 150px;
+  }
+  .home .intro img {
+    height: 150px;
+    width: 150px;
+  }
+  .home .intro h1 {
+    font-size: 26px;
+  }
+  .home .intro p {
+    font-size: 14px;
+  }
+
+
+
+}
