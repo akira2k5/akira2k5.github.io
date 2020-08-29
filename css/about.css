@@ -26,7 +26,7 @@
 .about .about-content .about-li{ /*個人特色列表*/
   font-size: 18px;
   line-height: 25px;
-  color: #656D78;
+  color: #666;
   margin-bottom: 0;
   padding-left: 40px;
 }
@@ -41,7 +41,7 @@
 .about .about-content .about-text p { /*自我介紹內文*/
   font-size: 18px;
   line-height: 25px;
-  color: #656D78;
+  color: #666;
   margin-bottom: 0;
 }
 
@@ -72,7 +72,7 @@
 .about .about-content .personal-info .info-item p span { /* 個人資訊 內容文字 */
   /* background-color: red; */
   /*font-weight: 400;*/
-  color: #656D78;
+  color: #666;
   margin-left: 4px;
   display: inline-block;
 }
@@ -180,7 +180,7 @@
 .about .about-content .timeline-li{ /*經歷工作內容列表*/
   font-size: 16px;
   line-height: 25px;
-  color: #656D78;
+  color: #666;
   margin-bottom: 0;
   padding-left: 20px;
 }
@@ -225,7 +225,7 @@
   font-size: 14px;
   margin-top: -5px;/* 線跟圓形圖示相連在一起*/ 
   /*margin-bottom: 12px;*/
-  color: #656D78;/*a8cfcf*/
+  color: #666;/*a8cfcf*/
   text-transform: capitalize;
 }
 
@@ -246,7 +246,7 @@
   /* background-color: blue; */
   font-size: 18px;
   line-height: 25px;
-  color: #656D78;
+  color: #666;
   margin: 0;
 }
 
